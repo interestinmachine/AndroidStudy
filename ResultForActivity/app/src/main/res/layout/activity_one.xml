@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal">
+
+
+    <!-- 提示文本 -->
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是从主activity传来的数据"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Hello文本 -->
+    <EditText
+        android:id="@+id/firstText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#009688"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- 确认并返回按钮 -->
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定并返回"
+            android:textSize="18sp"
+            android:backgroundTint="#7C4DFF"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="4dp" />
+
+        <!-- 取消并返回按钮 -->
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消并返回"
+            android:textSize="18sp"
+            android:backgroundTint="#7C4DFF"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+</LinearLayout>
